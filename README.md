@@ -58,6 +58,42 @@ racp-playwright-restassured/
 
 ---
 
+## Installing Prerequisites
+
+### Node.js
+
+Download and run the installer from [https://nodejs.org](https://nodejs.org) (LTS recommended), or use a package manager:
+
+```powershell
+# Chocolatey (Windows)
+choco install nodejs-lts -y
+
+# winget (Windows)
+winget install OpenJS.NodeJS.LTS
+```
+
+### Java JDK 17 + Maven
+
+Both are required for RestAssured. Install them together with one command — open **PowerShell as Administrator**:
+
+```powershell
+# Chocolatey (recommended if already installed)
+choco install microsoft-openjdk17 maven -y
+
+# winget
+winget install Microsoft.OpenJDK.17
+winget install Apache.Maven
+```
+
+After installation, **close and reopen your terminal** so the PATH updates, then verify:
+
+```powershell
+java -version   # expected: openjdk 17.x.x
+mvn -version    # expected: Apache Maven 3.x.x
+```
+
+---
+
 ## Installation
 
 ### 1. API
@@ -84,7 +120,7 @@ npx playwright install chromium
 
 ### 4. RestAssured
 
-Maven downloads dependencies automatically on first run. No separate install step needed.
+Maven downloads all dependencies automatically on first run. No separate install step needed beyond having `mvn` available.
 
 ```bash
 cd restassured

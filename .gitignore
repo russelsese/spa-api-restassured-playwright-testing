@@ -1,0 +1,20 @@
+# Node — explicit per-folder so each is clearly covered
+api/node_modules/
+web-ui-spa/node_modules/
+playwright/node_modules/
+npm-debug.log*
+
+# Next.js
+web-ui-spa/.next/
+web-ui-spa/out/
+
+# Playwright
+playwright/test-results/
+playwright/playwright-report/
+
+# Maven / Java
+restassured/target/
+
+# OS
+.DS_Store
+Thumbs.db

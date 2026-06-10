@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { v4: uuidv4 } = require('uuid');
+const { randomUUID } = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
@@ -41,7 +41,7 @@ app.post('/api/registrations', (req, res) => {
   }
 
   const record = {
-    id: uuidv4(),
+    id: randomUUID(),
     firstName,
     lastName,
     email,

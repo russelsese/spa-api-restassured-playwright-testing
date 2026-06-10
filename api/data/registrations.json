@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "id": "3eff3645-ca7f-4b69-ad68-c96e09ea983b",
+    "firstName": "Russel",
+    "lastName": "Sese",
+    "email": "russelsese.android@gmail.com",
+    "phone": null,
+    "dateOfBirth": null,
+    "createdAt": "2026-06-10T07:05:10.397Z"
+  }
+]
